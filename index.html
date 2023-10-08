@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>My Portfolio</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color:white
+        padding: 1000px;
+        
+        }
+
+        header {
+        background-color: #7a1212;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        }
+
+        header h1 {
+        margin: 0;
+        text-align: center;
+        }
+
+        #about {
+  position: relative;
+}
+
+#myImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.caption {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#myImage:hover + .caption {
+  opacity: 1;
+}
+
+
+        #skills {
+        text-align: left;
+        padding: 10px 0;
+        }
+
+        #skills ul {
+        list-style: none;
+        }
+
+       
+        
+
+        #resume,
+        #contact {
+        text-align: center;
+        padding: 20px 0;
+        }
+@keyframes anim-resume {
+0% { transform: translateX(-50%); }
+100% { transform: translateX(0); }
+  }
+  
+  .resume-container {
+    position: relative;
+    width: 638px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 350px;
+  }
+  
+  .resume-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .resume-img {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: anim-resume 1s ease-in-out;
+    nav-up: 150px;
+  }
+  
+ .resume-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+.resume-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+.resume-download:hover {
+    background-color: #0056b3;
+  }
+
+        footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        }
+
+#p{
+  font-stretch: ultra-expanded;
+}
+h1{
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#skills ul li {
+  position: relative;
+  list-style: none;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+#skills ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+/* Header */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Image */
+.project1 {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Caption */
+.caption {
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.project2 {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Caption */
+.caption {
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* Contact Section */
+#contact {
+  animation: slideInRight 1s ease-in-out;
+}
+
+/* Footer Section */
+footer {
+  animation: slideInUp 1s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Styling for the caption */
+.caption {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+  animation: slideIn 1s ease-in-out;
+
+}
+/* Add animation to the header */
+h2 {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Define the animation */
+@keyframes example {
+  0%   {color: blue;}
+  25%  {color: yellow;}
+  50%  {color: red;}
+  75%  {color: green;}
+  100% {color: blue;}
+}
+
+</style>
+  </head>
+  <body>
+    <header>
+      <h1> KATHIRAVAN </h1>
+      <p> FRONTEND DEVELOPER</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="container"></a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio"></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+   </header>
+       
+   <div id="about">
+    <img id="myImage" src="https://media.licdn.com/dms/image/D5603AQH-MQjnRTLTIw/profile-displayphoto-shrink_200_200/0/1694933438489?e=1701907200&v=beta&t=aDQoGhddn7kPg5VLepuflzCXpuISJLinpgD2fJZqUrE
+       " alt="Click me" onclick="toggleCaption()">
+       <h1>
+        about
+       </h1>
+       <h3 id="caption" class="caption">Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings.
+            To get an opportunity where I can make the best of my potential and contribute to the organization's growth.</h3>
+            <h2>
+              Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings.
+            To get an opportunity where I can make the best of my potential and contribute to the organization's growth
+            </h2>
+   </div>
+   <h1>
+    project1
+   </h1>
+   <div class="container">
+    <div class="leftbox">
+      <img class="project1" src="https://wallpapercave.com/wp/wp9076772.jpg">
+      <p id="caption" class="caption">Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. Data analysis has multiple facets and approaches, encompassing diverse techniques under a variety of names, and is used in different business, science, and social science domains. In today's business world,
+        data analysis plays a role in making decisions more scientific and helping businesses operate more effectively.</p>
+        <p id="caption" class="caption">the project work on grop </p>
+        <h2>Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. Data analysis has multiple facets and approaches, encompassing diverse techniques under a variety of names, and is used in different business, science, and social science domains. In today's business world,
+          data analysis plays a role in making decisions more scientific and helping businesses operate more effectively.</p>
+          <p id="caption" class="caption">the project work on grop</h2>
+
+
+    </div>
+   </div>
+   <h1>
+    project2
+    </h1>
+  
+   <div id="container">
+    <div class="rightbox">
+      <img class="project2" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80">
+       <p id="caption" class="caption">As a web developer, my objective is to create user-friendly and efficient websites that are visually appealing and easy to navigate. I utilize my skills in HTML, CSS, JavaScript, 
+           and PHP to develop websites that meet all the requirements of the client
+       </p>
+       <h2>As a web developer, my objective is to create user-friendly and efficient websites that are visually appealing and easy to navigate. I utilize my skills in HTML, CSS, JavaScript, 
+        and PHP to develop websites that meet all the requirements of the client</h2>
+     </div>
+    <section id="skills">
+     <h1> skills </h1>
+       
+     <ul>
+      <li class="skill-percentage">HTML / HTML5</li>
+      <li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
+      <li class="skill-percentage">Javascript</li>
+      <li class="skill-percentage">Jquery</li>
+      <li class="skill-percentage">Wordpress</li>
+      <li class="skill-percentage">Photoshop</li>
+      
+    </ul>
+  </section>
+    <div id="resume">  </div>
+
+       <div class="resume-container">
+    <div class="resume-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgeCgJSzjCuh_ixOyE6STv3AURaVf1tVRKdTyjG3l0g&s" alt="download" class="resume-img">
+        <div class="resume-title">resume</div>
+        <a href="https://github.com/KathiravanA/kathirresume" class="resume-download">download</a>
+    </div>
+</div>
+
+   <section id="contact">
+       <h2>Contact</h2>
+       <p>Email: kathirvansk228@gmail.com</p>
+       <p>Phone: 9150776692</p>
+     </section>
+     <footer>
+       <p>&copy; 2023 kathirvavan. All rights reserved.</p>
+     </footer>
+<script>
+
+
+    document.querySelector('.project2').addEventListener('click', function() {
+        document.querySelector('.caption').style.display = 'block';
+    });
+</script>
+
+</script>
+   </body>
+   </html>
